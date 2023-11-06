@@ -1,0 +1,74 @@
+# Root directory for the project
+ROOT: .
+
+# Project name
+PROJ: Zim
+
+# Metadata file
+METADATA: HoMi_metadata.csv
+fwd_reads_path: forward_reads
+rev_reads_path: reverse_reads
+
+################################################
+### TRIMMOMATIC ADAPTER AND QUALITY TRIMMING ###
+# minimum read length after trimming
+min_readlen: 50
+# the minimum quality for the start of a read. If it's below this quality, trim that base pair
+readstart_qual_min: 20
+# the minimum quality for the end of a read. If it's below this quality, trim that base pair
+readend_qual_min: 20
+
+######################
+### SEQTK TRIMMING ###
+# This is a second pass hard trimming, after trimmomatic has done quality-based and adapter trimming
+# Read trimming this many base pairs from the start of the read
+trim_fwd: 5
+trim_rev: 10
+
+# Read truncating this many base pairs from the end of the read
+trunc_fwd: 0
+trunc_rev: 0
+
+############################
+### Hostile host read removal ###
+# Database for host read removal
+# Current supported options include:
+# - human-t2t-hla
+# - human-t2t-hla-argos985
+# - filepath to an already downloaded and bowtie2-indexed database 
+#   (with no .bt1, .bt2 etc file extensions in this argument)
+hostile_db: human-t2t-hla-argos985
+# Where to download a database for hostile (if applicable)
+loc_for_hostile_db_download: /pl/LozuponeLab/databases
+
+
+#################################
+### HUMAnN BioBakery pipeline ###
+
+# Path to MetaPhlan bowtie database (step 1 of HUMAnN)
+metaphlan_bowtie_db: /pl/LozuponeLab/databases/metaphlan_db/
+
+# Paths to Chocophlan and UniRef databases for HUMAnN
+# If these aren't already downloaded, HoMi will download them
+chocophlan_db: /pl/LozuponeLab/databases/humann_dbs/chocophlan
+uniref_db: /pl/LozuponeLab/databases/humann_dbs/uniref
+utility_mapping_db: /pl/LozuponeLab/databases/humann_dbs/utility_mapping 
+
+
+#################################
+### Host read mapping (BBmap) ###
+# provide the path for the host reference genome
+# if these files do not exist yet, HoMi will by default download the GRCh38 human reference genome
+host_ref_fna: /pl/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.fna 
+host_ref_gtf: /pl/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.refseq.gtf
+
+
+################################
+### Resources ###
+# Rules will use the default resources, unless you provide other resources here
+# these should be formatted as <rule_name>_<resource>
+# examples:
+# rule_name_partition: new_partition
+# rule_name_mem_mb: 10000 # (10 GB)
+# rule_name_runtime: 600 # (10 hours)
+# rule_name_threads: 8 

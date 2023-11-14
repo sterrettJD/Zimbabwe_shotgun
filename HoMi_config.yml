@@ -39,28 +39,28 @@ trunc_rev: 0
 #   (with no .bt1, .bt2 etc file extensions in this argument)
 hostile_db: human-t2t-hla-argos985
 # Where to download a database for hostile (if applicable)
-loc_for_hostile_db_download: /pl/LozuponeLab/databases
+loc_for_hostile_db_download: /pl/active/LozuponeLab/databases
 
 
 #################################
 ### HUMAnN BioBakery pipeline ###
 
 # Path to MetaPhlan bowtie database (step 1 of HUMAnN)
-metaphlan_bowtie_db: /pl/LozuponeLab/databases/metaphlan_db/
+metaphlan_bowtie_db: /pl/active/LozuponeLab/databases/metaphlan_db/
 
 # Paths to Chocophlan and UniRef databases for HUMAnN
 # If these aren't already downloaded, HoMi will download them
-chocophlan_db: /pl/LozuponeLab/databases/humann_dbs/chocophlan
-uniref_db: /pl/LozuponeLab/databases/humann_dbs/uniref
-utility_mapping_db: /pl/LozuponeLab/databases/humann_dbs/utility_mapping 
+chocophlan_db: /pl/active/LozuponeLab/databases/humann_dbs/chocophlan
+uniref_db: /pl/active/LozuponeLab/databases/humann_dbs/uniref
+utility_mapping_db: /pl/active/LozuponeLab/databases/humann_dbs/utility_mapping 
 
 
 #################################
 ### Host read mapping (BBmap) ###
 # provide the path for the host reference genome
 # if these files do not exist yet, HoMi will by default download the GRCh38 human reference genome
-host_ref_fna: /pl/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.fna 
-host_ref_gtf: /pl/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.refseq.gtf
+host_ref_fna: /pl/active/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.fna 
+host_ref_gtf: /pl/active/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.refseq.gtf
 
 
 ################################

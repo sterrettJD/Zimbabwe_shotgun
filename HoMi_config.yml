@@ -22,8 +22,8 @@ readend_qual_min: 20
 ### SEQTK TRIMMING ###
 # This is a second pass hard trimming, after trimmomatic has done quality-based and adapter trimming
 # Read trimming this many base pairs from the start of the read
-trim_fwd: 5
-trim_rev: 10
+trim_fwd: 0
+trim_rev: 0
 
 # Read truncating this many base pairs from the end of the read
 trunc_fwd: 0

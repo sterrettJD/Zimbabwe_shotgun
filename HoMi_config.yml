@@ -52,14 +52,14 @@ metaphlan_bowtie_db: /pl/active/LozuponeLab/databases/metaphlan_db/
 # If these aren't already downloaded, HoMi will download them
 chocophlan_db: /pl/active/LozuponeLab/databases/humann_dbs/chocophlan
 uniref_db: /pl/active/LozuponeLab/databases/humann_dbs/uniref
-utility_mapping_db: /pl/active/LozuponeLab/databases/humann_dbs/utility_mapping 
+utility_mapping_db: /pl/active/LozuponeLab/databases/humann_dbs/utility_mapping
 
 
 #################################
 ### Host read mapping (BBmap) ###
 # provide the path for the host reference genome
 # if these files do not exist yet, HoMi will by default download the GRCh38 human reference genome
-host_ref_fna: /pl/active/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.fna 
+host_ref_fna: /pl/active/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.fna
 host_ref_gtf: /pl/active/LozuponeLab/databases/GRCh38/GRCh38_full_analysis_set.refseq.gtf
 
 

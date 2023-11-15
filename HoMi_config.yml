@@ -6,8 +6,8 @@ PROJ: Zim
 
 # Metadata file
 METADATA: HoMi_metadata.csv
-fwd_reads_path: forward_reads
-rev_reads_path: reverse_reads
+fwd_reads_path: ForwardReads
+rev_reads_path: ReverseReads
 
 ################################################
 ### TRIMMOMATIC ADAPTER AND QUALITY TRIMMING ###

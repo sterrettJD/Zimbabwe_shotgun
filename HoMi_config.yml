@@ -99,4 +99,4 @@ default_long_partition_name: amilan
 # bbmap_host_slurm_extra: qos=long email=sample_email@colorado.edu
 # All rules would receive the email param, 
 # and the bbmap host rule would also receive the qos param
-default_slurm_extra: email=john.sterrett@colorado.edu mail-type=ALL
+default_slurm_extra: mail-user=john.sterrett@colorado.edu mail-type=ALL

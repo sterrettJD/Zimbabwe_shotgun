@@ -5,7 +5,7 @@ ROOT: .
 PROJ: Zim
 
 # Metadata file
-METADATA: HoMi_metadata.csv
+METADATA: /projects/jost9358/Zimbabwe_shotgun/HoMi_metadata.csv
 fwd_reads_path: ForwardReads
 rev_reads_path: ReverseReads
 
